@@ -5,7 +5,40 @@
 
 double[] array = GetArray(6, 0, 10);
 PrintArray(array);
+double maxNumber = GetMaxNumber(array);
+double minNumber = GetMinNumber(array);
+Console.Write($" -> {maxNumber - minNumber}");
 
+
+
+
+
+double GetMinNumber(double[] array)
+{
+    double minNumber = array[0];
+    for(int i = 0; i < array.Length; i++)
+    {                
+        if(array[i] < minNumber)
+        {
+            minNumber = array[i];            
+        }
+    }
+    return minNumber;
+}
+
+
+double GetMaxNumber(double[] array)
+{
+    double maxNumber = array[0];
+    for(int i = 0; i < array.Length; i++)
+    {                
+        if(array[i] > maxNumber)
+        {
+            maxNumber = array[i];                        
+        }
+    }
+    return maxNumber;
+}
 
 
 void PrintArray(double[] array)
