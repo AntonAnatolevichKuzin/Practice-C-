@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\GeekBrains\\Seminars\\Practice-C-\\Exeercise_041\\Exeercise_041.csproj",
-      "projectName": "Exeercise_041",
-      "projectPath": "C:\\Users\\user\\Desktop\\GeekBrains\\Seminars\\Practice-C-\\Exeercise_041\\Exeercise_041.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\GeekBrains\\Seminars\\Practice-C-\\Exercise_041\\Exercise_041.csproj",
+      "projectName": "Exercise_041",
+      "projectPath": "C:\\Users\\user\\Desktop\\GeekBrains\\Seminars\\Practice-C-\\Exercise_041\\Exercise_041.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\GeekBrains\\Seminars\\Practice-C-\\Exeercise_041\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\GeekBrains\\Seminars\\Practice-C-\\Exercise_041\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
