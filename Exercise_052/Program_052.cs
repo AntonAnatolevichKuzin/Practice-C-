@@ -9,6 +9,8 @@
 
 int[,] array = GetArray(5, 5, -10, 10);
 PrintArray(array);
+Console.Write("Среднее арифметическое каждого столбца: ");
+double sra = SRA(array);
 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
@@ -33,4 +35,20 @@ void PrintArray(int[,] inArray)
         }
         Console.WriteLine();
     }
+}
+
+double SRA(int[,] inArray)
+{    
+    double sra = 0;
+    for(int j = 0; j < inArray.GetLength(1); j++)
+    {
+        int sum = 0;        
+        for(int i =0; i <inArray.GetLength(0); i++)
+        {            
+            sum +=  inArray[i, j];            
+        }
+        sra = Math.Round((double)sum / inArray.GetLength(0), 2);
+        Console.Write($" {sra} ");
+    }
+    return sra;
 }
