@@ -12,8 +12,9 @@
 
 int[,] array = GetArray(4, 4, 0, 9);
 PrintArray(array);
-int[] arr = GetArraySumString(4, array);
-PrintArray2(arr);
+int[] res = GetArraySumString(4, array);
+int number = NumberMinString (res);
+Console.WriteLine($"Наименьшая сумма элементов на {number} строке.");
 
 
 
@@ -45,32 +46,27 @@ void PrintArray(int[,] inArray)
 int[] GetArraySumString(int size, int[,] array)
 {
     int[] res = new int[size];
-    
+    int n = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
-        int result = 0;
-        for (int n = 0; n < size; n++)
+        int sum = 0;
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            
-            for (int j = 0; j < array.GetLength(1); j++)
-            {
-                result = result + array[i, j];
-            }
-
-            res[n] = result;
+            sum = sum + array[i, j];
         }
-        
+        res[n] = sum;
+        n++;
     }
-
     return res;
 }
 
-void PrintArray2(int[] arr)
+int NumberMinString(int[] res)
 {
-    Console.Write("[");
-    for (int i = 0; i < arr.Length; i++)
+    int min = 0;
+    for (int i = 0; i < res.GetLength(0); i++)
     {
-        Console.Write(arr[i] + " ");
+        if (res[i] < res[min]) min = i;        
     }
-    Console.Write("]");
+    min = min + 1;
+    return min;
 }
